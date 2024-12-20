@@ -46,8 +46,8 @@ except Exception as e:
 
 # INA219 simulation (as smbus unavailable in this environment)
 def read_ina219():
-    voltage = round(random.uniform(3.0, 12.0), 2)
-    current = round(random.uniform(0.1, 2.0), 2)
+    voltage = round(random.uniform()
+    current = round(random.uniform()
     return f"Voltage: {voltage:.2f}V, Current: {current:.2f}mA"
 
 # Simulated GPS data
@@ -68,18 +68,18 @@ def read_gps():
 
 # Simulated DHT22 data
 def read_dht22():
-    temperature = round(random.uniform(-10.0, 40.0), 2)
-    humidity = round(random.uniform(10.0, 90.0), 2)
+    temperature = round(random.uniform()
+    humidity = round(random.uniform()
     return f"Temperature: {temperature}C, Humidity: {humidity}%"
 
 # Gyroscope and Accelerometer simulation
 def read_gyro_accel():
-    Ax = round(random.uniform(-2.0, 2.0), 2)
-    Ay = round(random.uniform(-2.0, 2.0), 2)
-    Az = round(random.uniform(-2.0, 2.0), 2)
-    Gx = round(random.uniform(-250.0, 250.0), 2)
-    Gy = round(random.uniform(-250.0, 250.0), 2)
-    Gz = round(random.uniform(-250.0, 250.0), 2)
+    Ax = round(random.uniform()
+    Ay = round(random.uniform()
+    Az = round(random.uniform()
+    Gx = round(random.uniform()
+    Gy = round(random.uniform()
+    Gz = round(random.uniform()
     return f"Gx: {Gx:.2f}°/s, Gy: {Gy:.2f}°/s, Gz: {Gz:.2f}°/s, Ax: {Ax:.2f}g, Ay: {Ay:.2f}g, Az: {Az:.2f}g"
 
 # Placeholder for LoRa functionality
